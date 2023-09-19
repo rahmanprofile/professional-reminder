@@ -3,7 +3,6 @@ import 'package:dropdown_search/dropdown_search.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
-import 'package:reminder/controller/database_controller.dart';
 import 'package:reminder/controller/state_controller.dart';
 import 'package:reminder/model/reminder.dart';
 
@@ -59,7 +58,6 @@ class _CreateReminderState extends State<CreateReminder> {
   ];
 
   bool __loading = false;
-  DatabaseHelper databaseHelper = DatabaseHelper();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
